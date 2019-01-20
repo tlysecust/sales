@@ -49,49 +49,7 @@ print("Mean squared error: %.2f"
 # Explained variance score: 1 is perfect prediction
 print('Variance score: %.2f' % r2_score(testY, pred))
 
-
-
-
-# from sklearn.metrics import confusion_matrix,accuracy_score
-# score=accuracy_score(y_pred=pred,y_true=testY)  #计算模型在测试集上的准确性
-# print(score)
-# confusion=confusion_matrix(y_pred=pred,y_true=testY)
-# print(confusion)
-
-
-
-
-# import pandas as pd
-# from sklearn.linear_model import LogisticRegression
-# from sklearn.model_selection import train_test_split
-# #sex_data=pd.read_csv("test.csv",sep=",",header=0,index_col=0)
-# x_cols = [x for x in com_test.columns if x != 'item_cnt_nextmonth']
-# X = com_test[x_cols]
-# y=com_test.item_cnt_nextmonth
-# trainX, testX, trainY, testY = train_test_split(X, y, test_size=0.2, random_state=0) # 为了看模型在没有见过数据集上的表现，随机拿出数据集中30%的部分做测试
-# lr = LogisticRegression(class_weight='balanced')
-# lr.fit(trainX,trainY)
-# print(lr.fit(trainX,trainY))
-# pred=lr.predict(testX)
-# from sklearn.metrics import confusion_matrix,accuracy_score
-# score=accuracy_score(y_pred=pred,y_true=testY)  #计算模型在测试集上的准确性
-# print(score)
-# confusion=confusion_matrix(y_pred=pred,y_true=testY)
-# print(confusion)
 #
-#
-
-# def get_item_cnt_nextmonth(hang):
-#     month =hang["date_block_num"]
-#     nextmoth=month+1
-#     shop =hang["shop_id"]
-#     item =hang["item_id"]
-#     return (month,nextmoth,shop,item)
-#
-# train_tes=train_test.apply(get_item_cnt_nextmonth,axis=1)
-# #train_test["item_cnt_nextmonth"]=train_test.ix[(train_test["shop_id"] > 1) & (df3["pvalue"] < 0.1), ['score', 'MEAN','description',"adduct"]]
-# print(train_tes)
-#df=pd.read_csv("train_test.csv")
 
 
 
